@@ -13,7 +13,7 @@
 #     password: "password"
 #     )
 # end
-users=User.all
+# users=User.all
 # categories=Category.all
 # index=0
 # 50.times do 
@@ -29,11 +29,17 @@ users=User.all
 
 
 
+# 50.times do 
+#   Article.create!(
+#     user_id: users[0].id,
+#     content: Faker::Lorem.paragraph,    
+#     )
+# end
+
 50.times do 
-  Article.create!(
-    user_id: users[0].id,
-    content: Faker::Lorem.paragraph,    
+  Website.create!(
+    business: businesses[0].id,
+    content: Faker::Internet.domain_name,    
     )
 end
-
 
