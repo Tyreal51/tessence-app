@@ -17,6 +17,7 @@ require 'faker'
 # users=User.all
 # categories=Category.all
 # index=0
+
 20.times do 
   Business.create!(
     name: Faker::Company.name,
@@ -26,10 +27,10 @@ require 'faker'
     phone_number: Faker::PhoneNumber.phone_number,
     website: Faker::Internet.domain_name,
     image: Faker::Placeholdit.image,
-    user_id: users[0].id,
-    category_id: categories[0].id
+    user_id: User.first.id,
+    category_id: Category.first.id
     )
-  index+=1
+ 
 end
 
 
