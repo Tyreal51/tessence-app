@@ -1,3 +1,4 @@
+require 'faker'
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
 #
@@ -16,16 +17,20 @@
 # users=User.all
 # categories=Category.all
 # index=0
-# 50.times do 
-#   Business.create!(
-#     name: Faker::Company.name,
-#     address: Faker::Address.street_address,
-#     phone_number: Faker::PhoneNumber.phone_number,
-#     user_id: users[0].id,
-#     category_id: categories[0].id
-#     )
-#   index+=1
-# end
+20.times do 
+  Business.create!(
+    name: Faker::Company.name,
+    address: Faker::Address.street_address,
+    city: Faker::Address.city,
+    state: Faker::Address.state_abbr,
+    phone_number: Faker::PhoneNumber.phone_number,
+    website: Faker::Internet.domain_name,
+    image: Faker::Placeholdit.image,
+    user_id: users[0].id,
+    category_id: categories[0].id
+    )
+  index+=1
+end
 
 
 
@@ -36,10 +41,10 @@
 #     )
 # end
 
-50.times do 
-  Website.create!(
-    business: businesses[0].id,
-    content: Faker::Internet.domain_name,    
-    )
-end
+# 20.times do 
+#   Business.create!(
+#     business: businesses[0].id,
+#     content: Faker::Internet.domain_name,    
+#     )
+# end
 
