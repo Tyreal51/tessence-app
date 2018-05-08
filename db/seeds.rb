@@ -18,20 +18,20 @@ require 'faker'
 # categories=Category.all
 # index=0
 
-20.times do 
-  Business.create!(
-    name: Faker::Company.name,
-    address: Faker::Address.street_address,
-    city: Faker::Address.city,
-    state: Faker::Address.state_abbr,
-    phone_number: Faker::PhoneNumber.phone_number,
-    website: Faker::Internet.domain_name,
-    image: Faker::Placeholdit.image,
-    user_id: User.first.id,
-    category_id: Category.first.id
-    )
+# 20.times do 
+#   Business.create!(
+#     name: Faker::Company.name,
+#     address: Faker::Address.street_address,
+#     city: Faker::Address.city,
+#     state: Faker::Address.state_abbr,
+#     phone_number: Faker::PhoneNumber.phone_number,
+#     website: Faker::Internet.domain_name,
+#     image: Faker::Placeholdit.image,
+#     user_id: User.first.id,
+#     category_id: Category.first.id
+#     )
  
-end
+# end
 
 
 
