@@ -203,13 +203,101 @@
 # business.website="rebirthgarments.com"
 # business.save 
 
-business = Business.find_by(id: 54)
+# business = Business.find_by(id: 54)
+# business.user_id=1
+# business.category_id=8
+# business.name="La Colombe Coffee"
+# business.address="5158 N. Clark St"
+# business.city="Chicago"
+# business.state="IL"
+# business.phone_number="773-942-7090"
+# business.website="lacolombe.com"
+# business.save 
+
+business = Business.find_by(id: 66)
+business.user_id=1
+business.category_id=6
+business.name="Highland Park Ford Lincoln"
+business.address="1333 Park Ave W"
+business.city="Highland Park"
+business.state="IL"
+business.phone_number="847-433-7200"
+business.website="highlandparkford.com"
+business.save 
+
+business = Business.find_by(id: 67)
 business.user_id=1
 business.category_id=8
-business.name="La Colombe Coffee"
-business.address="5158 N. Clark St"
+business.name="B'Gabs"
+business.address="1450 E. 57th St"
 business.city="Chicago"
 business.state="IL"
-business.phone_number="773-942-7090"
-business.website="lacolombe.com"
+business.phone_number="773-256-1000"
+business.website="bgabsgoodies.com"
+business.save 
+
+business = Business.find_by(id: 68)
+business.user_id=1
+business.category_id=2
+business.name="Big Chicks"
+business.address="5024 N. Sheridan Rd"
+business.city="Chicago"
+business.state="IL"
+business.phone_number="773-728-5511"
+business.website="bigchicks.com"
+business.save 
+
+business = Business.find_by(id: 69)
+business.user_id=1
+business.category_id=2
+business.name="Hydrate"
+business.address="3458 N. Halsted"
+business.city="Chicago"
+business.state="IL"
+business.phone_number="773-975-9244"
+business.website="hydratechicago.com"
+business.save 
+
+business = Business.find_by(id: 70)
+business.user_id=1
+business.category_id=2
+business.name="Replay"
+business.address="5358 N. Clark St"
+business.city="Chicago"
+business.state="IL"
+business.phone_number="773-654-1369"
+business.website="replayandersonville.com"
+business.save 
+
+business = Business.find_by(id: 71)
+business.user_id=1
+business.category_id=9
+business.name="Foursided"
+business.address="5061 N. Clark St"
+business.city="Chicago"
+business.state="IL"
+business.phone_number="773-506-8300"
+business.website="foursided.com"
+business.save 
+
+business = Business.find_by(id: 72)
+business.user_id=1
+business.category_id=9
+business.name="Women & Children First"
+business.address="5233 N. Clark St"
+business.city="Chicago"
+business.state="IL"
+business.phone_number="773-769-9299"
+business.website="womenandchildrenfirst.com"
+business.save 
+
+business = Business.find_by(id: 73)
+business.user_id=1
+business.category_id=9
+business.name="Black Oak Tattoo"
+business.address="3419 W. Fullerton Ave"
+business.city="Chicago"
+business.state="IL"
+business.phone_number="773-663-7044"
+business.website="blackoakchicago.com"
 business.save 
