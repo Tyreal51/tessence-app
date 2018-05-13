@@ -90,6 +90,7 @@ var ListingPage = {
       address: "",
       phone_number: "",
       website: "",
+      image_url: "",
       errors: []
     };
   },

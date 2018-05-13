@@ -854,13 +854,20 @@
         </div>
     <div class="container">
       <div class="col-lg-12" v-for="business in businesses">
-       
+        <a v-bind:href="'http://' + business.website" target="_blank">
+          <img class="image_url" v-bind:src="business.image_url" width="300px">
+        </a>
+       <!--  <a v-bind:href="'/#/recipes/' + recipe.id" class="btn btn-primary">Go somewhere</a> -->
         <h2 class="business-text"> {{ business.name }}</h2>
         <p class="business-text"> {{ business.address }}</p>
         <p class="business-text"> {{ business.city }}</p>
         <p class="business-text"> {{ business.state }}</p>
         <p class="business-text"> {{ business.phone_number }}</p>
-        <p class="business-text"> {{ business.website }}  </p>
+        <p>
+          <a v-bind:href="'http://' + business.website" target="_blank"> {{ business.website }}</a>
+        </p>
+       
+
       </div>
           <footer class="footerWhite">
           <!-- FOOTER INFO -->
