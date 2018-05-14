@@ -49,17 +49,75 @@
 #     )
 # end
 
-# business = Business.find_by(id: 54)
-# business.user_id=1
-# business.category_id=1
-# business.name="Metropolis Coffee Company"
-# business.address="1039 W. Granville"
-# business.city="Chicago"
-# business.state="IL"
-# business.phone_number="773-764-0400"
-# business.website="metropoliscoffee.com"
-# business.save 
+Business.create!(
+business.category_id=3
+business.name="Oak Park Area Lesbian and Gay Association"
+business.address="P.O. Box 1460"
+business.city="Oak Park"
+business.state="IL"
+business.phone_number="XXX-XXX-XXXX"
+business.website="opalga.org"
+)
 
+Business.create!(
+business.category_id=9
+business.name="Brown Elephant, Oak Park"
+business.address="217 Harrison St"
+business.city="Oak Park"
+business.state="IL"
+business.phone_number="708-445-0612"
+business.website="howardbrown.org/brown-elephant/"
+)
+
+Business.create!(
+business.category_id=3
+business.name="Center on Halsted"
+business.address="3656 N Halsted St"
+business.city="Chicago"
+business.state="IL"
+business.phone_number="773-472-6469"
+business.website="centeronhalsted.org"
+)
+
+Business.create!(
+business.category_id=5
+business.name="the Hotel Chicago"
+business.address="333 N. Dearborn"
+business.city="Chicago"
+business.state="IL"
+business.phone_number="312-245-0333"
+business.website="thehotelchicago.com/"
+)
+
+Business.create!(
+business.category_id=5
+business.name="Hotel Monaco"
+business.address="225 N Wabash Ave"
+business.city="Chicago"
+business.state="IL"
+business.phone_number="312-960-8500"
+business.website="monaco-chicago.com/"
+)
+
+Business.create!(
+business.category_id=5
+business.name="the Wit Hotel"
+business.address="201 N State St"
+business.city="Chicago"
+business.state="IL"
+business.phone_number="312-467-0200"
+business.website="thewithotel.com/"
+)
+
+Business.create!(
+business.category_id=3
+business.name="Needle & Thread Law"
+business.address="online"
+business.city="Chicago"
+business.state="IL"
+business.phone_number="773-609-3637"
+business.website="needlethreadlaw.com"
+)
 # business = Business.find_by(id: 55)
 # business.user_id=1
 # business.category_id=2
@@ -351,17 +409,17 @@
 # business.image_url="img/things/legal.jpg"
 # business.save 
 
-business = Business.find_by(id: 57)
-business.user_id=1
-business.category_id=6
-business.name="Evanston Subaru"
-business.address="3340 Oakton St."
-business.city="Skokie"
-business.state="IL"
-business.phone_number="888-419-9298"
-business.website="evanstonsubaru.com"
-business.image_url="img/things/auto1.jpg"
-business.save 
+# business = Business.find_by(id: 57)
+# business.user_id=1
+# business.category_id=6
+# business.name="Evanston Subaru"
+# business.address="3340 Oakton St."
+# business.city="Skokie"
+# business.state="IL"
+# business.phone_number="888-419-9298"
+# business.website="evanstonsubaru.com"
+# business.image_url="img/things/auto1.jpg"
+# business.save 
 
 # business = Business.find_by(id: 58)
 # business.user_id=1
