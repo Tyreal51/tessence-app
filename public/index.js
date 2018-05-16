@@ -199,8 +199,8 @@ var BusinessAccommodations = {
   methods: {},
   computed: {}
 };
-var BusinessHealthcare = {
-  template: "#business-healthcare",
+var BusinessEntertainment = {
+  template: "#business-entertainment",
   data: function() {
     return {
       businesses: [],
@@ -209,7 +209,7 @@ var BusinessHealthcare = {
   },
   created: function() {
     axios
-        .get("/businesses")
+        .get("/businessentertainment")
         .then(function(response) {
           // console.log(this.businesses);
           this.businesses = response.data;
@@ -236,7 +236,7 @@ var router = new VueRouter({
   { path: "/listing", component: ListingPage },
   { path: "/business-restaurant", component: BusinessRestaurant },
   // { path: "/business-healthcare", component: BusinessHealthcare },
-  // { path: "/business-entertainment", component: BusinessEntertainment },
+  { path: "/business-entertainment", component: BusinessEntertainment },
   // { path: "/business-professional-services", component: BusinessProfessionalServices },
   // { path: "/business-fitness", component: BusinessFitness },
   { path: "/business-accommodations", component: BusinessAccommodations }

@@ -33,5 +33,9 @@ class BusinessesController < ApplicationController
     businesses = Business.where(category_id:5)
     render json: businesses.as_json
   end
+  def businessentertainment
+    businesses = Business.where(category_id:2)
+    render json: businesses.as_json
+  end
  
 end

@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   get '/businesses' => 'businesses#index'
   get '/businessrestaurants' => 'businesses#businessrestaurants'
   get '/businessaccommodations' => 'businesses#businessaccommodations'
+  get '/businessentertainment' => 'businesses#businessentertainment'
   post 'categories' => 'categories#create'
   patch 'categories' => 'categories#update'
   post 'category_businesses' => 'category_businesses#create'
