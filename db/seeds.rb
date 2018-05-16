@@ -609,17 +609,76 @@
 # business.description="Cash-only American comfort & gluten-free fare plus a full bar in art-filled surrounds with a patio."
 # business.save
 
-business = Business.find_by(id: 77)
-business.description="Hotel Chicago is a luxury hotel ideally located in downtown Chicago, Illinois. Part of the Marriott Autograph Collection, our guests can earn & redeem points."
-business.image_url="img/things/hotel1.jpg"
+# business = Business.find_by(id: 77)
+# business.description="Hotel Chicago is a luxury hotel ideally located in downtown Chicago, Illinois. Part of the Marriott Autograph Collection, our guests can earn & redeem points."
+# business.image_url="img/things/hotel1.jpg"
+# business.save
+
+# business = Business.find_by(id: 78)
+# business.description="Perched in the center of Chicago’s stunning skyline on the Chicago River, Hotel Monaco combines an enviable Loop location with eclectic furnishings, warm hospitality, and boutique touches like a buzzing nightly wine hour."
+# business.image_url="img/things/hotel2.jpg"
+# business.save
+
+# business = Business.find_by(id: 55)
+# business.description="Behemoth gay club drawing a diverse crowd, serving up slushy drinks and known for showtune nights."
+# business.save
+
+# business = Business.find_by(id: 68)
+# business.description="Lively, colorful, cash-only LGBT-friendly bar with basic eats & weekend DJs amid art-lined walls."
+# business.save
+
+# business = Business.find_by(id: 69)
+# business.description="Energetic gay dance club with theme nights & open very late."
+# business.save
+
+# business = Business.find_by(id: 70)
+# business.description="Arcade bar with retro games & flat-screen TVs, plus craft beer, bourbon & American comfort food."
+# business.save
+
+# business = Business.find_by(id: 59)
+# business.description="Howard Brown Health exists to eliminate the disparities in healthcare experienced by lesbian, gay, bisexual and transgender people through research, education and the provision of services that promote health and wellness."
+# business.save
+
+# business = Business.find_by(id: 61)
+# business.description="We are a unique collective working together to facilitate the empowerment of women and trans people by providing access to health care and health education in a respectful environment where people pay what they can afford."
+# business.save
+
+# business = Business.find_by(id: 62)
+# business.description="Thrift store selling clothing, furniture & books in support of the Howard Brown Health Center."
+# business.save
+
+# business = Business.find_by(id: 65)
+# business.description="Rebirth Garments are gender non-conforming wearables and accessories for people on the full spectrum of gender, size and ability."
+# business.save
+
+# business = Business.find_by(id: 71)
+# business.description="Frame gallery with custom services & an assortment of prints, stationery, gifts & novelty items."
+# business.save
+
+# business = Business.find_by(id: 72)
+# business.description="Indy-minded all-around bookshop known for its feminist & kid focus, with regular author appearances."
+# business.save
+
+# business = Business.find_by(id: 64)
+# business.description="Store for designer men's casualwear with a large selection of underwear, plus bags & accessories."
+# business.save
+
+business = Business.find_by(id: 56)
+business.description="Founded in 1973, Lambda Legal is the oldest and largest national legal organization whose mission is to achieve full recognition of the civil rights of lesbians, gay men, bisexuals, transgender people and everyone living with HIV through impact litigation, education and public policy work."
+business.image_url="img/things/legal.jpg"
 business.save
 
-business = Business.find_by(id: 78)
-business.description="Perched in the center of Chicago’s stunning skyline on the Chicago River, Hotel Monaco combines an enviable Loop location with eclectic furnishings, warm hospitality, and boutique touches like a buzzing nightly wine hour."
-business.image_url="img/things/hotel2.jpg"
+business = Business.find_by(id: 74)
+business.description="Established in 1989, OPALGA is one of the largest LGBTQ membership organizations in Illinois. Our diverse membership includes women and men of all ages, ethnicities and socioeconomic backgrounds. Our members live in Chicago’s near-west collar suburbs, Chicago proper, and beyond."
+business.image_url="img/things/lgbt.jpg"
 business.save
 
-business = Business.find_by(id: 79)
-business.description="Next to an El station on a street lined with upscale shops and restaurants, this sleek hotel in the Theater District is 2 blocks from the Chicago River and 11 minutes' walk from the sculptures at Millennium Park."
-business.image_url="img/things/hotel3.jpg"
+business = Business.find_by(id: 80)
+business.description="Needle & Thread Law is a solo-practice law firm that strives to provide a welcoming and safe space for individuals of all  economic backgrounds, ethnicity, sexual orientations, and gender identities. As a non-judgmental and LGTBQ-friendly law firm, we  place great value on protecting and promoting the rights of lesbian, gay, bisexual, transgender, and queer individuals in all areas of Bankruptcy law and Criminal Records. We understand that navigating the legal system can be an intimidating and invalidating process. We are sensitive to these concerns, and seek to make the legal process as simple and as affirming as possible."
+business.image_url="img/things/legal.jpg"
+business.save
+
+business = Business.find_by(id: 76)
+business.description="Center on Halsted is a lesbian, gay, bisexual, and transgender community center in Chicago, Illinois. It is the largest LGBT community center in the Midwest with more than 1,000 people walking through its doors every day."
+business.image_url="img/things/lgbt.jpg"
 business.save

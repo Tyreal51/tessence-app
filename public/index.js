@@ -226,6 +226,86 @@ var BusinessEntertainment = {
   computed: {}
 };
 
+var BusinessHealthcare = {
+  template: "#business-healthcare",
+  data: function() {
+    return {
+      businesses: [],
+      message: "Welcome to Vue.js!"
+    };
+  },
+  created: function() {
+    axios
+        .get("/businesshealthcare")
+        .then(function(response) {
+          // console.log(this.businesses);
+          this.businesses = response.data;
+          
+          console.log (this.businesses);
+        }.bind(this))
+        .catch(
+          function(error) {
+            this.errors = error.response.data.errors;
+          }.bind(this)
+        );
+  },
+  methods: {},
+  computed: {}
+};
+
+var BusinessRetail = {
+  template: "#business-retail",
+  data: function() {
+    return {
+      businesses: [],
+      message: "Welcome to Vue.js!"
+    };
+  },
+  created: function() {
+    axios
+        .get("/businessretail")
+        .then(function(response) {
+          // console.log(this.businesses);
+          this.businesses = response.data;
+          
+          console.log (this.businesses);
+        }.bind(this))
+        .catch(
+          function(error) {
+            this.errors = error.response.data.errors;
+          }.bind(this)
+        );
+  },
+  methods: {},
+  computed: {}
+};
+
+var BusinessProfessionalServices = {
+  template: "#business-professional-services",
+  data: function() {
+    return {
+      businesses: [],
+      message: "Welcome to Vue.js!"
+    };
+  },
+  created: function() {
+    axios
+        .get("/businessprofessionalservices")
+        .then(function(response) {
+          // console.log(this.businesses);
+          this.businesses = response.data;
+          
+          console.log (this.businesses);
+        }.bind(this))
+        .catch(
+          function(error) {
+            this.errors = error.response.data.errors;
+          }.bind(this)
+        );
+  },
+  methods: {},
+  computed: {}
+};
 
 var router = new VueRouter({
   routes: [
@@ -235,14 +315,14 @@ var router = new VueRouter({
   { path: "/logout", component: LogoutPage },
   { path: "/listing", component: ListingPage },
   { path: "/business-restaurant", component: BusinessRestaurant },
-  // { path: "/business-healthcare", component: BusinessHealthcare },
+  { path: "/business-healthcare", component: BusinessHealthcare },
   { path: "/business-entertainment", component: BusinessEntertainment },
-  // { path: "/business-professional-services", component: BusinessProfessionalServices },
+  { path: "/business-professional-services", component: BusinessProfessionalServices },
   // { path: "/business-fitness", component: BusinessFitness },
-  { path: "/business-accommodations", component: BusinessAccommodations }
+  { path: "/business-accommodations", component: BusinessAccommodations },
   // { path: "/business-automotive", component: BusinessAutomotive },
   // { path: "/business-real-estate", component: BusinessRealEstate },
-  // { path: "/business-retail", component: BusinessRetail },
+  { path: "/business-retail", component: BusinessRetail }
   ],
   scrollBehavior: function(to, from, savedPosition) {
     return { x: 0, y: 0 };
