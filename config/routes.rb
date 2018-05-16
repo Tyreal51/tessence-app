@@ -14,6 +14,8 @@ Rails.application.routes.draw do
   patch 'businesses' => 'businesses#update'
   get '/businesses/:id' => 'businesses#show'
   get '/businesses' => 'businesses#index'
+  get '/businessrestaurants' => 'businesses#businessrestaurants'
+  get '/businessaccommodations' => 'businesses#businessaccommodations'
   post 'categories' => 'categories#create'
   patch 'categories' => 'categories#update'
   post 'category_businesses' => 'category_businesses#create'

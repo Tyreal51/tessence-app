@@ -49,75 +49,75 @@
 #     )
 # end
 
-Business.create!(
-business.category_id=3
-business.name="Oak Park Area Lesbian and Gay Association"
-business.address="P.O. Box 1460"
-business.city="Oak Park"
-business.state="IL"
-business.phone_number="XXX-XXX-XXXX"
-business.website="opalga.org"
-)
+# Business.create!(
+# business.category_id=3
+# business.name="Oak Park Area Lesbian and Gay Association"
+# business.address="P.O. Box 1460"
+# business.city="Oak Park"
+# business.state="IL"
+# business.phone_number="XXX-XXX-XXXX"
+# business.website="opalga.org"
+# )
 
-Business.create!(
-business.category_id=9
-business.name="Brown Elephant, Oak Park"
-business.address="217 Harrison St"
-business.city="Oak Park"
-business.state="IL"
-business.phone_number="708-445-0612"
-business.website="howardbrown.org/brown-elephant/"
-)
+# Business.create!(
+# business.category_id=9
+# business.name="Brown Elephant, Oak Park"
+# business.address="217 Harrison St"
+# business.city="Oak Park"
+# business.state="IL"
+# business.phone_number="708-445-0612"
+# business.website="howardbrown.org/brown-elephant/"
+# )
 
-Business.create!(
-business.category_id=3
-business.name="Center on Halsted"
-business.address="3656 N Halsted St"
-business.city="Chicago"
-business.state="IL"
-business.phone_number="773-472-6469"
-business.website="centeronhalsted.org"
-)
+# Business.create!(
+# business.category_id=3
+# business.name="Center on Halsted"
+# business.address="3656 N Halsted St"
+# business.city="Chicago"
+# business.state="IL"
+# business.phone_number="773-472-6469"
+# business.website="centeronhalsted.org"
+# )
 
-Business.create!(
-business.category_id=5
-business.name="the Hotel Chicago"
-business.address="333 N. Dearborn"
-business.city="Chicago"
-business.state="IL"
-business.phone_number="312-245-0333"
-business.website="thehotelchicago.com/"
-)
+# Business.create!(
+# business.category_id=5
+# business.name="the Hotel Chicago"
+# business.address="333 N. Dearborn"
+# business.city="Chicago"
+# business.state="IL"
+# business.phone_number="312-245-0333"
+# business.website="thehotelchicago.com/"
+# )
 
-Business.create!(
-business.category_id=5
-business.name="Hotel Monaco"
-business.address="225 N Wabash Ave"
-business.city="Chicago"
-business.state="IL"
-business.phone_number="312-960-8500"
-business.website="monaco-chicago.com/"
-)
+# Business.create!(
+# business.category_id=5
+# business.name="Hotel Monaco"
+# business.address="225 N Wabash Ave"
+# business.city="Chicago"
+# business.state="IL"
+# business.phone_number="312-960-8500"
+# business.website="monaco-chicago.com/"
+# )
 
-Business.create!(
-business.category_id=5
-business.name="the Wit Hotel"
-business.address="201 N State St"
-business.city="Chicago"
-business.state="IL"
-business.phone_number="312-467-0200"
-business.website="thewithotel.com/"
-)
+# Business.create!(
+# business.category_id=5
+# business.name="the Wit Hotel"
+# business.address="201 N State St"
+# business.city="Chicago"
+# business.state="IL"
+# business.phone_number="312-467-0200"
+# business.website="thewithotel.com/"
+# )
 
-Business.create!(
-business.category_id=3
-business.name="Needle & Thread Law"
-business.address="online"
-business.city="Chicago"
-business.state="IL"
-business.phone_number="773-609-3637"
-business.website="needlethreadlaw.com"
-)
+# Business.create!(
+# business.category_id=3
+# business.name="Needle & Thread Law"
+# business.address="online"
+# business.city="Chicago"
+# business.state="IL"
+# business.phone_number="773-609-3637"
+# business.website="needlethreadlaw.com"
+# )
 # business = Business.find_by(id: 55)
 # business.user_id=1
 # business.category_id=2
@@ -589,3 +589,37 @@ business.website="needlethreadlaw.com"
 # business.image_url="img/things/bookstore.jpg"
 # business.save 
 
+# business = Business.find_by(id: 52)
+# business.description="Hamburger Mary’s is so much more than just a neighborhood burger joint. Yeah, we serve up some big & juicy gourmet burgers, as well as house-brewed beers and strong cocktails, but there’s also weekend drag shows and charity “HamBingo,” cabaret theatre events, trivia, and so much more!"
+# business.save
+
+# business = Business.find_by(id: 53)
+# business.description="Casual, late-night BYOB spot serving a menu of Thai faves & sushi with many vegetarian options."
+# business.save
+
+# business = Business.find_by(id: 54)
+# business.description="European-style cafe serving house-brand artisanal coffee & morning pastries in a sleek space."
+# business.save
+
+# business = Business.find_by(id: 67)
+# business.description="Independent cafe offering creative vegan dishes, including raw choices, plus juices & smoothies."
+# business.save
+
+# business = Business.find_by(id: 58)
+# business.description="Cash-only American comfort & gluten-free fare plus a full bar in art-filled surrounds with a patio."
+# business.save
+
+business = Business.find_by(id: 77)
+business.description="Hotel Chicago is a luxury hotel ideally located in downtown Chicago, Illinois. Part of the Marriott Autograph Collection, our guests can earn & redeem points."
+business.image_url="img/things/hotel1.jpg"
+business.save
+
+business = Business.find_by(id: 78)
+business.description="Perched in the center of Chicago’s stunning skyline on the Chicago River, Hotel Monaco combines an enviable Loop location with eclectic furnishings, warm hospitality, and boutique touches like a buzzing nightly wine hour."
+business.image_url="img/things/hotel2.jpg"
+business.save
+
+business = Business.find_by(id: 79)
+business.description="Next to an El station on a street lined with upscale shops and restaurants, this sleek hotel in the Theater District is 2 blocks from the Chicago River and 11 minutes' walk from the sculptures at Millennium Park."
+business.image_url="img/things/hotel3.jpg"
+business.save

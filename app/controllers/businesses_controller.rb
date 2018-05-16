@@ -21,8 +21,17 @@ class BusinessesController < ApplicationController
     render json: business.as_json
   end
   def index
-    businesses = Business.all
-    puts "*" * 50
+    businesses = Business.all   
+    # businesses = Business.where(category_id:8)
     render json: businesses.as_json
   end
+  def businessrestaurants
+    businesses = Business.where(category_id:8)
+    render json: businesses.as_json
+  end
+  def businessaccommodations
+    businesses = Business.where(category_id:5)
+    render json: businesses.as_json
+  end
+ 
 end

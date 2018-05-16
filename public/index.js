@@ -146,6 +146,86 @@ var LogoutPage = {
   }
 };
 
+var BusinessRestaurant = {
+  template: "#business-restaurant",
+  data: function() {
+    return {
+      businesses: [],
+      message: "Welcome to Vue.js!"
+    };
+  },
+  created: function() {
+    axios
+        .get("/businessrestaurants")
+        .then(function(response) {
+          // console.log(this.businesses);
+          this.businesses = response.data;
+          
+          console.log (this.businesses);
+        }.bind(this))
+        .catch(
+          function(error) {
+            this.errors = error.response.data.errors;
+          }.bind(this)
+        );
+  },
+  methods: {},
+  computed: {}
+};
+
+var BusinessAccommodations = {
+  template: "#business-accommodations",
+  data: function() {
+    return {
+      businesses: [],
+      message: "Welcome to Vue.js!"
+    };
+  },
+  created: function() {
+    axios
+        .get("/businessaccommodations")
+        .then(function(response) {
+          // console.log(this.businesses);
+          this.businesses = response.data;
+          
+          console.log (this.businesses);
+        }.bind(this))
+        .catch(
+          function(error) {
+            this.errors = error.response.data.errors;
+          }.bind(this)
+        );
+  },
+  methods: {},
+  computed: {}
+};
+var BusinessHealthcare = {
+  template: "#business-healthcare",
+  data: function() {
+    return {
+      businesses: [],
+      message: "Welcome to Vue.js!"
+    };
+  },
+  created: function() {
+    axios
+        .get("/businesses")
+        .then(function(response) {
+          // console.log(this.businesses);
+          this.businesses = response.data;
+          
+          console.log (this.businesses);
+        }.bind(this))
+        .catch(
+          function(error) {
+            this.errors = error.response.data.errors;
+          }.bind(this)
+        );
+  },
+  methods: {},
+  computed: {}
+};
+
 
 var router = new VueRouter({
   routes: [
@@ -153,8 +233,16 @@ var router = new VueRouter({
   { path: "/signup", component: SignupPage },
   { path: "/login", component: LoginPage },
   { path: "/logout", component: LogoutPage },
-  { path: "/listing", component: ListingPage }
-
+  { path: "/listing", component: ListingPage },
+  { path: "/business-restaurant", component: BusinessRestaurant },
+  // { path: "/business-healthcare", component: BusinessHealthcare },
+  // { path: "/business-entertainment", component: BusinessEntertainment },
+  // { path: "/business-professional-services", component: BusinessProfessionalServices },
+  // { path: "/business-fitness", component: BusinessFitness },
+  { path: "/business-accommodations", component: BusinessAccommodations }
+  // { path: "/business-automotive", component: BusinessAutomotive },
+  // { path: "/business-real-estate", component: BusinessRealEstate },
+  // { path: "/business-retail", component: BusinessRetail },
   ],
   scrollBehavior: function(to, from, savedPosition) {
     return { x: 0, y: 0 };
